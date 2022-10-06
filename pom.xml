@@ -5,20 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.spring.mvc</groupId>
-    <artifactId>spring_MVC</artifactId>
-    <packaging>war</packaging>
+    <artifactId>springmvc</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.3.23</version>
-        </dependency>
-
-
-
-
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -26,17 +17,29 @@
             <scope>provided</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.2.12.RELEASE</version>
+        </dependency>
     </dependencies>
-
-
 
 
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.2</version>
+                    <configuration>
+                        <verbose>true</verbose>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <showWarnings>true</showWarnings>
+                    </configuration>
+                </plugin>
 
-                <!-- Hosting WebServer and Application Server on local machine using apache tomcat-->
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
@@ -44,19 +47,6 @@
                     <configuration>
                         <path>/</path>
                         <contextReloadable>true</contextReloadable>
-                    </configuration>
-                </plugin>
-
-                <!-- To compile java classes into their respective jar and war-->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.2</version>
-                    <configuration>
-                        <verbose>true</verbose>
-                        <source>18</source>
-                        <target>18</target>
-                        <showWarnings>true</showWarnings>
                     </configuration>
                 </plugin>
             </plugins>
