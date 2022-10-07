@@ -1,10 +1,13 @@
 package org.spring.mvc.controller;
 
-import org.spring.mvc.EntityComponent.Athlete;
+import org.spring.mvc.entityComponent.Athlete;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/athlete")
@@ -17,8 +20,12 @@ public class AthleteController {
     }
 
     @RequestMapping("/showAthleteDetails")
-    public String showAthleteDetails(@ModelAttribute("athlete") Athlete myAthlete){
-        System.out.println(myAthlete);
+    public String showAthleteDetails(@Valid @ModelAttribute("athlete") Athlete myAthlete, BindingResult result){
+        System.out.println("Athlete Details : "+myAthlete);
+        if(result.hasErrors()){
+            return "add-athlete-form";
+        }
+
         return "show-athlete-details";
     }
 

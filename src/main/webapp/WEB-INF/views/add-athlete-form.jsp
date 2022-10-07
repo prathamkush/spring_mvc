@@ -3,6 +3,12 @@
 
 
 <head>
+    <style>
+        .error{
+            color: red;
+            font-style: italic;
+        }
+    </style>
     <title>Athlete Form</title>
 </head>
 <body>
@@ -11,6 +17,7 @@
 <form:form action="showAthleteDetails" modelAttribute="athlete">
 <label>Name</label>
     <form:input path="name"/>
+    <form:errors path="name" cssClass="error"/>
     <form:select path = "country">
         <form:option label = "IN" value = "INDIA"/>
         <form:option label = "CN" value = "CANADA"/>

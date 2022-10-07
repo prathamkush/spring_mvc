@@ -1,4 +1,4 @@
-package org.spring.mvc.EntityComponent;
+package org.spring.mvc.entityComponent;
 
 import org.springframework.stereotype.Component;
 

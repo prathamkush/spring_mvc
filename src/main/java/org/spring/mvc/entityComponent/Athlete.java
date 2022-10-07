@@ -1,12 +1,19 @@
-package org.spring.mvc.EntityComponent;
+package org.spring.mvc.entityComponent;
 
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Entity;
 import java.util.Arrays;
 
 @Component
 public class Athlete {
+
+//    @NotNull(message = "This is a REQUIRED field")
+//    @Size(min = 1, message = "This is a REQUIRED filed") //, message = "This is a REQUIRED field. Must be Greater than 1")
+
+    @NotEmpty(message = "This is a Required Field")
     private String name;
     private String country;
     private String rank;

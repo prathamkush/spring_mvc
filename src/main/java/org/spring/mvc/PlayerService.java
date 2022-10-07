@@ -1,6 +1,6 @@
-package org.spring.mvc.service;
+package org.spring.mvc;
 
-import org.spring.mvc.EntityComponent.Player;
+import org.spring.mvc.entityComponent.Player;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;

@@ -1,7 +1,7 @@
 package org.spring.mvc.controller;
 
-import org.spring.mvc.EntityComponent.Player;
-import org.spring.mvc.service.PlayerService;
+import org.spring.mvc.PlayerService;
+import org.spring.mvc.entityComponent.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
