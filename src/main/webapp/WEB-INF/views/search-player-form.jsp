@@ -7,10 +7,13 @@
 <body>
 <h1>Player Form</h1>
 
-<form action="showPlayerDetails" method="GET">
+<%@ taglibprefix = "form" uri = "http://www.springframework.org/tags/form" %>
+
+<form action="showPlayerDetails" method="POST">
     <label>Player form:</label>
     <input type="text" name="playerName" />
     <input type="submit" value="Enter" />
+
 </form>
 
 </body>

@@ -8,7 +8,11 @@
 <body>
 <h1>Player Details</h1>
 
-<p> Player Name : ${name} </p>
+<p> Player Details : <p>
+<p> id  : ${id} </p>
+<p> Name : ${name} </p>
+<p> Nationality : ${nationality} </p>
+<p> Age : ${age} </p>
 
 
 
