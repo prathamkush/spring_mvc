@@ -1,6 +1,7 @@
 package org.spring.mvc.controller;
 
 import org.spring.mvc.entityComponent.Athlete;
+import org.spring.mvc.entityComponent.PlayerStats;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,24 +14,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping("/athlete")
-public class AthleteController {
+@RequestMapping("/stats")
+public class PlayerStatsController {
 
-    @RequestMapping("/showAthleteForm")
-    public String showAthleteForm(Model model){
-        model.addAttribute("athlete", new Athlete());
-        return "add-athlete-form";
+    @RequestMapping("/showPlayerStatsForm")
+    public String showPlayerStatsForm(Model model){
+        model.addAttribute("playerStats", new PlayerStats());
+        return "head-to-head";
     }
 
-    @RequestMapping("/showAthleteDetails")
-    public String showAthleteDetails(@Valid @ModelAttribute("athlete") Athlete myAthlete, BindingResult result){
-        System.out.println("Athlete Details : "+myAthlete);
+    @RequestMapping("/showHeadToHeadStats")
+    public String showHeadToHeadStatsDetails(@Valid @ModelAttribute("playerStats")PlayerStats myPlayer, BindingResult result){
+        System.out.println("Stats Details : "+myPlayer);
         if(result.hasErrors()){
             System.out.println(result);
-            return "add-athlete-form";
+            return "head-to-head";
         }
 
-        return "show-athlete-details";
+        return "head-to-head-stats";
     }
 
     @InitBinder
@@ -40,11 +41,5 @@ public class AthleteController {
         webDataBinder.registerCustomEditor(String.class, editor);
     }
 
-}
 
-//<%
-//        for (String tour: ${athlete.tournament}){
-//<li>${tour}</li>
-//        }
-//
-//        %>
+}

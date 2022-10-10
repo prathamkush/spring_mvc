@@ -1,4 +1,4 @@
-package org.spring.mvc;
+package org.spring.mvc.Service;
 
 import org.spring.mvc.entityComponent.Player;
 import org.springframework.stereotype.Service;
