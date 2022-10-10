@@ -7,22 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bd0a0ce-a81e-4d7c-9ec8-651ea68cf95b" name="Changes" comment="added Validation checks for fields">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/PlayerStatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/entityComponent/PlayerStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/validation/HeadToHead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/validation/HeadToHeadConstraintValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/head-to-head-stats.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/head-to-head.jsp" afterDir="false" />
+    <list default="true" id="8bd0a0ce-a81e-4d7c-9ec8-651ea68cf95b" name="Changes" comment="different validations and custom annotations">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/MyDispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/PlayerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/mvc/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/Service/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/AthleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/AthleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/mvc/entityComponent/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/entityComponent/Athlete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/player-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/player-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-athlete-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add-athlete-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-athlete-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show-athlete-details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/PlayerStatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/controller/PlayerStatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/mvc/entityComponent/PlayerStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/mvc/entityComponent/PlayerStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/head-to-head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/head-to-head-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665142134686</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="different validations and custom annotations">
+      <created>1665386081903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665386081903</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +188,7 @@
     <MESSAGE value="done" />
     <MESSAGE value="Form to Controller through @RequestParam (Player0 and modelAttribute (Athlete)" />
     <MESSAGE value="added Validation checks for fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Validation checks for fields" />
+    <MESSAGE value="different validations and custom annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="different validations and custom annotations" />
   </component>
 </project>

@@ -20,7 +20,7 @@ public class PlayerStatsController {
     @RequestMapping("/showPlayerStatsForm")
     public String showPlayerStatsForm(Model model){
         model.addAttribute("playerStats", new PlayerStats());
-        return "head-to-head";
+        return "head-to-head-form";
     }
 
     @RequestMapping("/showHeadToHeadStats")
@@ -28,7 +28,7 @@ public class PlayerStatsController {
         System.out.println("Stats Details : "+myPlayer);
         if(result.hasErrors()){
             System.out.println(result);
-            return "head-to-head";
+            return "head-to-head-form";
         }
 
         return "head-to-head-stats";

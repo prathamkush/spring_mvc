@@ -2,12 +2,16 @@ package org.spring.mvc.entityComponent;
 
 import org.spring.mvc.validation.HeadToHead;
 
+import javax.validation.constraints.NotNull;
+
 public class PlayerStats {
 
     private String player1;
     private String player2;
     private String player3;
 
+
+    @NotNull(message = "Required Field")
     @HeadToHead
     private String headToHead;
 
